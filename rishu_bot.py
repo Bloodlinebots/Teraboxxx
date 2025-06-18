@@ -218,8 +218,9 @@ async def process_video_request(client, message):
 
 # Run Flask in a thread
 def run_flask():
-    flask_app.run(host='0.0.0.0', port=8080)
-
+    port = int(os.environ.get("PORT", 5000))  # Heroku ka PORT use karo
+    flask_app.run(host='0.0.0.0', port=port)
+    
 Thread(target=run_flask, daemon=True).start()
 
 # Start bot
