@@ -32,7 +32,7 @@ start_time = time.time()
 
 # MongoDB
 mongo_client = pymongo.MongoClient(MONGO_URI)
-db = mongo_client.get_database()
+db = mongo_client["teraboxbot"]
 users_collection = db.get_collection("users")
 
 # Pyrogram
