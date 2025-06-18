@@ -71,7 +71,7 @@ async def start_message(client, message):
             text=f"💡 **New User Alert**:\n👤 **User:** {message.from_user.mention}\n🆔 **User ID:** `{user_id}`\n📊 **Total Users:** {users_collection.count_documents({})}"
         )
 
-    image_urls = [ # truncated for brevity ]
+    image_urls = [ ]
     random_image = random.choice(image_urls)
 
     join_button_1 = InlineKeyboardButton("˹ υᴘᴅᴧᴛєs ˼", url="https://t.me/Ur_rishu_143")
