@@ -103,7 +103,7 @@ async def start_message(client, message):
          InlineKeyboardButton("CHANNEL", url="https://t.me/BOTMINE_TECH")]
     ]
 
-    caption = f"**✨ 𝐇𝐞𝐲 {message.from_user.mention}, 𝚆𝙴𝙻𝙲𝙾𝙼𝙴 ✨  
+    caption = f"""**✨ 𝐇𝐞𝐲 {message.from_user.mention}, 𝚆𝙴𝙻𝙲𝙾𝙼𝙴 ✨  
 ────────────────────  
 🔗 𝐒𝐞𝐧𝐝 𝐚𝐧𝐲 𝐓𝐞𝐫𝐚𝐁𝐨𝐱 𝐥𝐢𝐧𝐤...
 
@@ -113,7 +113,7 @@ async def start_message(client, message):
 
 💫 𝐍𝐨 𝐥𝐢𝐦𝐢𝐭𝐬. 𝐍𝐨 𝐚𝐝𝐬. 𝐍𝐨 𝐰𝐚𝐢𝐭𝐢𝐧𝐠.  
 ────────────────────  
-💖 𝐄𝐧𝐣𝐨𝐲 𝐭𝐡𝐞 𝐦𝐨𝐬𝐭 𝐩𝐨𝐰𝐞𝐫𝐟𝐮𝐥 𝐓𝐞𝐫𝐚𝐁𝐨𝐱 𝐁𝐨𝐭!**"
+💖 𝐄𝐧𝐣𝐨𝐲 𝐭𝐡𝐞 𝐦𝐨𝐬𝐭 𝐩𝐨𝐰𝐞𝐫𝐟𝐮𝐥 𝐓𝐞𝐫𝐚𝐁𝐨𝐱 𝐁𝐨𝐭!**"""
     await client.send_photo(chat_id=message.chat.id, photo=photo_url, caption=caption, reply_markup=InlineKeyboardMarkup(buttons))
 
 @app.on_message(filters.command("help"))
