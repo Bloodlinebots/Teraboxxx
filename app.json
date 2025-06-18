@@ -1,0 +1,33 @@
+{
+  "name": "Pyrogram Mongo Bot",
+  "description": "A Pyrogram-based Telegram bot with MongoDB support.",
+  "repository": "https://github.com/your-username/your-repo-name",
+  "keywords": ["telegram", "pyrogram", "bot", "mongodb"],
+  "env": {
+    "BOT_TOKEN": {
+      "description": "Your Telegram Bot Token from BotFather",
+      "required": true
+    },
+    "MONGO_URI": {
+      "description": "MongoDB connection string",
+      "required": true
+    },
+    "ADMIN_ID": {
+      "description": "Admin user ID (optional, default set in code)",
+      "required": false
+    },
+    "MONGO_DB_NAME": {
+      "description": "Mongo DB name (optional, default: Rishu-free-db)",
+      "required": false
+    },
+    "MONGO_COLLECTION_NAME": {
+      "description": "Mongo collection name (optional, default: users)",
+      "required": false
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
