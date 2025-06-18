@@ -16,13 +16,13 @@ import random
 # Bot details from environment variables
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 MONGO_URI = os.getenv("MONGO_URI")
-CHANNEL_1_USERNAME = "Rishucoder"
+CHANNEL_1_USERNAME = "bot_backup"
 CHANNEL_2_USERNAME = "Rishu_mood"
 API_HASH = "42a60d9c657b106370c79bb0a8ac560c"
 API_ID = "14050586"
 TERABOX_API = "https://terabox-player.rishuapi.workers.dev/?url="
-DUMP_CHANNEL = "-1002561334306"
-ADMIN_ID = int(os.getenv("ADMIN_ID", "5738579437"))
+DUMP_CHANNEL = "-1002788628376"
+ADMIN_ID = int(os.getenv("ADMIN_ID", "7755789304"))
 
 # Flask app for monitoring
 flask_app = Flask(__name__)
@@ -93,7 +93,7 @@ async def start_message(client, message):
 » ✦ ησ ʟᴧɢ, ғᴧsᴛ ᴧηᴅ sєᴄυꝛє 
 » ✦ ᴘꝛєϻɪυϻ ғєᴧᴛυꝛєs
 •──────────────────────•
-❖ 𝐏ᴏᴡᴇʀᴇᴅ ʙʏ  »»  [˹ʀɪsʜυ ʙσᴛ˼ ](t.me/ur_rishu_143) 
+❖ 𝐏ᴏᴡᴇʀᴇᴅ ʙʏ  »»  [˹ʙσᴛϻɪηє ᴛєᴄh˼ ](t.me/unbornvillian) 
 •──────────────────────•**""",
         reply_markup=markup
     )
