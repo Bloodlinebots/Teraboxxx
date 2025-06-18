@@ -1,28 +1,31 @@
 {
-  "name": "Pyrogram Mongo Bot",
-  "description": "A Pyrogram-based Telegram bot with MongoDB support.",
-  "repository": "https://github.com/your-username/your-repo-name",
-  "keywords": ["telegram", "pyrogram", "bot", "mongodb"],
+  "name": "Terabox Downloader Bot",
+  "description": "A Pyrogram-based Telegram bot for downloading and streaming Terabox videos.",
+  "repository": "https://github.com/yourusername/terabox-bot",
+  "keywords": ["telegram", "pyrogram", "terabox", "bot", "downloader"],
   "env": {
     "BOT_TOKEN": {
-      "description": "Your Telegram Bot Token from BotFather",
+      "description": "Telegram Bot Token from @BotFather",
+      "required": true
+    },
+    "API_ID": {
+      "description": "Telegram API ID",
+      "value": "14050586",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Telegram API Hash",
+      "value": "42a60d9c657b106370c79bb0a8ac560c",
       "required": true
     },
     "MONGO_URI": {
-      "description": "MongoDB connection string",
+      "description": "Your MongoDB URI",
       "required": true
     },
     "ADMIN_ID": {
-      "description": "Admin user ID (optional, default set in code)",
-      "required": false
-    },
-    "MONGO_DB_NAME": {
-      "description": "Mongo DB name (optional, default: Rishu-free-db)",
-      "required": false
-    },
-    "MONGO_COLLECTION_NAME": {
-      "description": "Mongo collection name (optional, default: users)",
-      "required": false
+      "description": "Telegram user ID of the Admin",
+      "value": "7755789304",
+      "required": true
     }
   },
   "buildpacks": [
