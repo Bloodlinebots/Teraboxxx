@@ -1,1 +1,1 @@
-worker: python rishu_bot.py
+web: python rishu_bot.py
